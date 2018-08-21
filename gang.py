@@ -1,6 +1,8 @@
-x = 'yes'
+import webbrowser
 y = input('Are you over 18 years old?')
-if y==x :
-    print('Welcome to the lovely adult world:www.pornhub.com')
+if y=='yes' :
+    print('Welcome to the lovely adult world')
+    webbrowser.open('http://www.pornhub.com')
 else:
-    print('Welcome to the children`s paradise:www.pornhub.com')
+    print('Welcome to the children`s paradise')
+    webbrowser.open('http://www.pornhub.com')
