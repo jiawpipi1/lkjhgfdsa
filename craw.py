@@ -41,6 +41,7 @@ if not os.path.isdir('download'):
 
 page_number = int(sys.argv[1])
 for count in range(3):
+    #time.sleep(0.5)  防備擋
     resp = requests.get(ptt_url)
     soup = BeautifulSoup(resp.text,'html.parser')
     articles = soup.select('div.title a')
